@@ -22,7 +22,7 @@ public class UpdateScoreboad {
         int plotY = event.getPlot().getId().getY();
 
         if (plot.getOwners().isEmpty())
-            new CreateScoreboad(player.getScoreboard()).setTeamPrefix("plot_owner", "&aFreies Plot");
+            new CreateScoreboad(player.getScoreboard()).setTeamPrefix("plot_owner", "&aNoch zu haben");
         else {
             String owner = getName(plot) + "";
             if (owner.equalsIgnoreCase(player.getName()))

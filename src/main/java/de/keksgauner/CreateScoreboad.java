@@ -29,7 +29,7 @@ public class CreateScoreboad {
         obj.getScore(sText("&7&l» &5Plot ID &7&l«")).setScore(2);
         obj.getScore(createTeam("plot_plotID", "§2")).setScore(1);
 
-        obj.getScore(sText("  ")).setScore(0); // Space
+        obj.getScore(sText("   ")).setScore(0); // Space
 
         player.setScoreboard(scb);
     }
