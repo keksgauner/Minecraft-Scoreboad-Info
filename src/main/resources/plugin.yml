@@ -1,0 +1,9 @@
+name: Scoreboad-Info
+version: '${project.version}'
+main: de.keksgauner.ScoreboadInfo
+api-version: 1.18
+loadbefore: [ PlotSquared ]
+depend: [ PlotSquared ]
+authors: [ Keksgauner ]
+description: Zeigt in Scoreboard den Plotbesitzer und die Position
+website: https://cookieleaks.de
