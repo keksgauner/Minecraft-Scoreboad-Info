@@ -15,29 +15,6 @@ public class CreateScoreboad {
     private Objective obj;
 
     public CreateScoreboad(Player player) {
-
-        //Ersellt eine Chunkliste
-        ArrayList<String> myChunkList = new ArrayList<>();
-        //Fügt die gewünschten Chunks ein
-        myChunkList.add("X;Z");
-
-        //Diese Variable wird nur auf true gesetzt falls er im chunk ist.
-        boolean isChunk = false;
-        //geht alle Chunks durch
-        for (String current: myChunkList ) {
-            String[] splitted = current.split(";");
-            //Prüft Chunkid für Chunkid ob er im Chunk ist
-            if(player.getChunk().getX() == Integer.parseInt(splitted[0]) && player.getChunk().getZ() == Integer.parseInt(splitted[1]))
-                //Falls ja wird es true gesetzt
-                isChunk = true;
-        }
-
-        if(isChunk) {
-            //Er ist in den Chunks
-        } else {
-            //Er ist nicht in den Chunks
-        }
-
         String name = sText("&8&l> &x&c&5&1&0&1&0&lINFRA&7&l-&4&lCraft &8&l<");
 
         scb = Bukkit.getScoreboardManager().getNewScoreboard();
