@@ -1,4 +1,4 @@
-# Minecraft-Scoreboad-Info
+# Minecraft-Scoreboard-Info
 Plotsquared-Scoreboard
 
 Das hier ist ein Scoreboard Info für Minecraft.
