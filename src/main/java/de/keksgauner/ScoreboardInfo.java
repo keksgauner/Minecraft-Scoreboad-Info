@@ -35,7 +35,7 @@ public final class ScoreboardInfo extends JavaPlugin {
     private void setupConfig() {
         cfg = this.getConfig();
 
-        cfg.addDefault("scoreboard.title", "&6&lPlotSquared");
+        cfg.addDefault("scoreboard.title", "&8&l> &x&c&5&1&0&1&0&lShark&7&l-&4&lBay &8&l<");
 
         cfg.options().copyDefaults(true);
         saveConfig();
