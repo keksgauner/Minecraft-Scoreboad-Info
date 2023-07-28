@@ -56,14 +56,13 @@ public class UpdateScoreboard {
     static BukkitTask bukkitTask;
 
     public static void start() {
-        bukkitTask = Bukkit.getScheduler().runTaskTimer(ScoreboardInfo.instance, new BukkitRunnable() {
+        bukkitTask = new BukkitRunnable() {
             @Override
             public void run() {
                 for (Player player : Bukkit.getOnlinePlayers()) {
-                    if (player.getWorld().getName().equals("SharkPlot"))
-                        new CreateScoreboard(player.getScoreboard()).setTeamPrefix("money", PlaceholderAPI.setPlaceholders(player, "%cmi_user_balance_formated%"));
+                    new CreateScoreboard(player.getScoreboard()).setTeamPrefix("money", PlaceholderAPI.setPlaceholders(player, "%cmi_user_balance_formated%"));
                 }
             }
-        }, 20, 0);
+        }.runTaskTimer(ScoreboardInfo.instance, 20 * 5, 0);
     }
 }

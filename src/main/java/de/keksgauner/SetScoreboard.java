@@ -13,15 +13,4 @@ public class SetScoreboard implements Listener {
      public void onJoin(PlayerJoinEvent event) {
           new CreateScoreboard(event.getPlayer());
      }
-
-     @EventHandler
-     public void onWorldChange(PlayerChangedWorldEvent event) {
-            if (event.getPlayer().getWorld().getName().equals("SharkPlot")) {
-                new CreateScoreboard(event.getPlayer());
-            } else {
-                Scoreboard scoreboard = event.getPlayer().getScoreboard();
-                scoreboard.clearSlot(DisplaySlot.SIDEBAR);
-            }
-     }
-
 }
