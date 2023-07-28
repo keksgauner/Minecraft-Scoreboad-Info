@@ -19,20 +19,22 @@ public class CreateScoreboard {
 
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
 
-        obj.getScore(sText(" ")).setScore(8); // Space
+        obj.getScore(sText(" ")).setScore(9); // Space
 
-        obj.getScore(sText("&7&l» &6Plot Owner &7&l«")).setScore(7);
-        obj.getScore(createTeam("plot_owner", "§1")).setScore(6);
+        obj.getScore(sText("&7&l» &6Plot Owner &7&l«")).setScore(8);
+        obj.getScore(createTeam("plot_owner", "§1")).setScore(7);
 
-        obj.getScore(sText("  ")).setScore(5); // Space
+        obj.getScore(sText("  ")).setScore(6); // Space
 
-        obj.getScore(sText("&7&l» &5Plot ID &7&l«")).setScore(4);
-        obj.getScore(createTeam("plot_plotID", "§2")).setScore(3);
+        obj.getScore(sText("&7&l» &5Plot ID &7&l«")).setScore(5);
+        obj.getScore(createTeam("plot_plotID", "§2")).setScore(4);
+
+        obj.getScore(sText("   ")).setScore(3); // Space
 
         obj.getScore(sText("&7&l» &3Geld &7&l«")).setScore(2);
         obj.getScore(createTeam("money", "§3")).setScore(1);
 
-        obj.getScore(sText("   ")).setScore(0); // Space
+        obj.getScore(sText("    ")).setScore(0); // Space
 
         player.setScoreboard(scb);
     }

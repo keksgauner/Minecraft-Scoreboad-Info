@@ -23,6 +23,8 @@ public final class ScoreboardInfo extends JavaPlugin {
             PlotAPI plotAPI = new PlotAPI();
             plotAPI.registerListener(new UpdateScoreboard());
         }
+
+        UpdateScoreboard.start();
     }
 
     @Override

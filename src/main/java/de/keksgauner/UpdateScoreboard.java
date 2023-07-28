@@ -64,6 +64,6 @@ public class UpdateScoreboard {
                         new CreateScoreboard(player.getScoreboard()).setTeamPrefix("money", PlaceholderAPI.setPlaceholders(player, "%cmi_user_balance_formated%"));
                 }
             }
-        }, 20, 20);
+        }, 20, 0);
     }
 }
