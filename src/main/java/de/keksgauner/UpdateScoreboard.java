@@ -60,7 +60,7 @@ public class UpdateScoreboard {
             @Override
             public void run() {
                 for (Player player : Bukkit.getOnlinePlayers()) {
-                    new CreateScoreboard(player.getScoreboard()).setTeamPrefix("money", PlaceholderAPI.setPlaceholders(player, "%cmi_user_balance_formated%"));
+                    new CreateScoreboard(player.getScoreboard()).setTeamPrefix("money", PlaceholderAPI.setPlaceholders(player, "&a%cmi_user_balance_formated%"));
                 }
             }
         }.runTaskTimer(ScoreboardInfo.instance, 20 * 5, 0);

@@ -31,7 +31,7 @@ public class CreateScoreboard {
 
         obj.getScore(sText("   ")).setScore(3); // Space
 
-        obj.getScore(sText("&7&l» &3Geld &7&l«")).setScore(2);
+        obj.getScore(sText("&7&l» &2Geld &7&l«")).setScore(2);
         obj.getScore(createTeam("money", "§3")).setScore(1);
 
         obj.getScore(sText("    ")).setScore(0); // Space
